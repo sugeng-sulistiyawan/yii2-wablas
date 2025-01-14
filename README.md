@@ -26,13 +26,13 @@ This extension is wrapper of Wablas API for [Yii framework 2.0](http://www.yiifr
 Package is available on [Packagist](https://packagist.org/packages/diecoding/yii2-wablas), you can install it using [Composer](https://getcomposer.org).
 
 ```shell
-composer require diecoding/yii2-wablas ~1.0
+composer require diecoding/yii2-wablas ^1.0
 ```
 
 or add to the require section of your `composer.json` file.
 
-```
-"diecoding/yii2-wablas": "~1.0"
+```shell
+"diecoding/yii2-wablas": "^1.0"
 ```
 
 ## Dependencies
@@ -154,7 +154,7 @@ $wablas = $this->wablas->build('custom')->sendMessage($data)->send();
 1. Install component
 
 ```shell
-composer require diecoding/yii2-wablas ~1.0
+composer require diecoding/yii2-wablas ^1.0
 ```
 
 2. Update your components configuration
