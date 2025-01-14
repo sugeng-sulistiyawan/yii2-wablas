@@ -5,7 +5,7 @@
  * @copyright Copyright (c) 2022 Agiel K. Saputra
  */
 
-namespace agielks\yii2\wablas;
+namespace diecoding\yii2\wablas;
 
 use Yii;
 use yii\base\Component;

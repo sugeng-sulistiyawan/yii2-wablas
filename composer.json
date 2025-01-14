@@ -1,5 +1,5 @@
 {
-    "name": "agielks/yii2-wablas",
+    "name": "diecoding/yii2-wablas",
     "description": "Wablas wrapper for Yii2",
     "type": "yii2-extension",
     "keywords": ["yii2-wablas", "yii2", "wablas", "component"],
@@ -7,6 +7,10 @@
         {
             "name": "Agiel K. Saputra",
             "email": "agielkurniawans@gmail.com"
+        },
+        {
+            "name": "Sugeng Sulistiyawan",
+            "email": "sugeng.sulistiyawan@gmail.com"
         }
     ],
     "license": "BSD-3-Clause",
@@ -20,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "agielks\\yii2\\wablas\\": "src/"
+            "diecoding\\yii2\\wablas\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "agielks\\yii2\\wablas\\tests\\": "tests/"
+            "diecoding\\yii2\\wablas\\tests\\": "tests/"
         }
     },
     "repositories": [

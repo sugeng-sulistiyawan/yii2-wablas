@@ -1,8 +1,8 @@
 <?php
 
-namespace agielks\yii2\wablas\tests;
+namespace diecoding\yii2\wablas\tests;
 
-use agielks\yii2\wablas\Wablas;
+use diecoding\yii2\wablas\Wablas;
 use Yii;
 
 class RequestTest extends \PHPUnit\Framework\TestCase
@@ -51,7 +51,7 @@ class RequestTest extends \PHPUnit\Framework\TestCase
             {"phone":"6281218xxxxxx","message":"hello there"}
             EOL;
 
-        /* @var $wablas \agielks\yii2\wablas\versions\V1 */
+        /* @var $wablas \diecoding\yii2\wablas\versions\V1 */
 
         $wablas = $this->wablas->build('v1');
         $actual = $wablas->sendMessage($data)->request->toString();
@@ -76,7 +76,7 @@ class RequestTest extends \PHPUnit\Framework\TestCase
             {"data":[{"phone":"6281218xxxxxx","message":"hello there"}]}
             EOL;
 
-        /* @var $wablas \agielks\yii2\wablas\versions\V2 */
+        /* @var $wablas \diecoding\yii2\wablas\versions\V2 */
 
         $wablas = $this->wablas->build('v2');
         $actual = $wablas->sendMessage($data)->request->toString();

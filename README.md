@@ -2,11 +2,11 @@
 
 This extension is wrapper of Wablas API for [Yii framework 2.0](http://www.yiiframework.com) (requires PHP 7.4+).
 
-[![Latest Stable Version](http://poser.pugx.org/agielks/yii2-wablas/v)](https://packagist.org/packages/agielks/yii2-wablas)
-[![Total Downloads](http://poser.pugx.org/agielks/yii2-wablas/downloads)](https://packagist.org/packages/agielks/yii2-wablas)
-[![Latest Unstable Version](http://poser.pugx.org/agielks/yii2-wablas/v/unstable)](https://packagist.org/packages/agielks/yii2-wablas)
-[![License](http://poser.pugx.org/agielks/yii2-wablas/license)](https://packagist.org/packages/agielks/yii2-wablas)
-[![PHP Version Require](http://poser.pugx.org/agielks/yii2-wablas/require/php)](https://packagist.org/packages/agielks/yii2-wablas)
+[![Latest Stable Version](http://poser.pugx.org/diecoding/yii2-wablas/v)](https://packagist.org/packages/diecoding/yii2-wablas)
+[![Total Downloads](http://poser.pugx.org/diecoding/yii2-wablas/downloads)](https://packagist.org/packages/diecoding/yii2-wablas)
+[![Latest Unstable Version](http://poser.pugx.org/diecoding/yii2-wablas/v/unstable)](https://packagist.org/packages/diecoding/yii2-wablas)
+[![License](http://poser.pugx.org/diecoding/yii2-wablas/license)](https://packagist.org/packages/diecoding/yii2-wablas)
+[![PHP Version Require](http://poser.pugx.org/diecoding/yii2-wablas/require/php)](https://packagist.org/packages/diecoding/yii2-wablas)
 
 ## Table of contents
 
@@ -23,16 +23,16 @@ This extension is wrapper of Wablas API for [Yii framework 2.0](http://www.yiifr
 
 ## Instalation
 
-Package is available on [Packagist](https://packagist.org/packages/agielks/yii2-wablas), you can install it using [Composer](https://getcomposer.org).
+Package is available on [Packagist](https://packagist.org/packages/diecoding/yii2-wablas), you can install it using [Composer](https://getcomposer.org).
 
 ```shell
-composer require agielks/yii2-wablas ~1.0
+composer require diecoding/yii2-wablas ~1.0
 ```
 
 or add to the require section of your `composer.json` file.
 
 ```
-"agielks/yii2-wablas": "~1.0"
+"diecoding/yii2-wablas": "~1.0"
 ```
 
 ## Dependencies
@@ -48,7 +48,7 @@ Add `wablas` component to your configuration file
 ```php
 'components' => [
     'wablas' => [
-        'class'    => \agielks\yii2\wablas\Wablas::class,
+        'class'    => \diecoding\yii2\wablas\Wablas::class,
         'endpoint' => 'my-wablas.com/api',                  // Change with your wablas API endpoint
         'token'    => 'my-token',                           // Change with your wablas API token
         'secret'   => 'my-secret',                          // Optional, change with your wablas API secret, you can use token with format `token.secret`
@@ -66,7 +66,7 @@ $data = [
     ]
 ];
 
-/** @var \agielks\yii2\wablas\versions\V2 $wablas */
+/** @var \diecoding\yii2\wablas\versions\V2 $wablas */
 $wablas  = $this->wablas->build('v2');
 $request = $wablas->sendMessage($data)->request;
 
@@ -87,7 +87,7 @@ $data = [
     ]
 ];
 
-/** @var \agielks\yii2\wablas\versions\V2 $wablas */
+/** @var \diecoding\yii2\wablas\versions\V2 $wablas */
 $wablas = $this->wablas->build('v2');
 $response = $wablas
     ->sendMessage($data)
@@ -131,7 +131,7 @@ class CustomVersion extends BaseObject
 ```php
 'components' => [
     'wablas' => [
-        'class'    => \agielks\yii2\wablas\Wablas::class,
+        'class'    => \diecoding\yii2\wablas\Wablas::class,
         'endpoint' => 'my-wablas.com',                      // Change with your endpoint
         'token'    => 'my-token',                           // Change with your wablas token,
         'versions' => [
@@ -154,7 +154,7 @@ $wablas = $this->wablas->build('custom')->sendMessage($data)->send();
 1. Install component
 
 ```shell
-composer require agielks/yii2-wablas ~1.0
+composer require diecoding/yii2-wablas ~1.0
 ```
 
 2. Update your components configuration
@@ -163,7 +163,7 @@ composer require agielks/yii2-wablas ~1.0
 'components' => [
     // other components here...
     'wablas' => [
-        'class'    => \agielks\yii2\wablas\Wablas::class,
+        'class'    => \diecoding\yii2\wablas\Wablas::class,
         'endpoint' => 'my-wablas.com/api',
         'token'    => 'my-token',
     ],

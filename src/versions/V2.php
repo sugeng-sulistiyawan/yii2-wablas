@@ -4,9 +4,9 @@
  * @copyright Copyright (c) 2022 Agiel K. Saputra
  */
 
-namespace agielks\yii2\wablas\versions;
+namespace diecoding\yii2\wablas\versions;
 
-use agielks\yii2\wablas\Wablas;
+use diecoding\yii2\wablas\Wablas;
 use yii\base\BaseObject;
 
 /**

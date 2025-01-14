@@ -1,6 +1,6 @@
 <?php
 
-namespace agielks\yii2\wablas\tests;
+namespace diecoding\yii2\wablas\tests;
 
 use Yii;
 use yii\console\Application;
