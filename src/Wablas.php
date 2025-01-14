@@ -67,7 +67,7 @@ class Wablas extends Component
         parent::init();
 
         $authorization = $this->token;
-        if ($this->secret) {
+        if ($this->secret && strpos($authorization, '.') === false) {
             $authorization .= '.' . $this->secret;
         }
 

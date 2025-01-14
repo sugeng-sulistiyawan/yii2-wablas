@@ -51,6 +51,7 @@ Add `wablas` component to your configuration file
         'class'    => \agielks\yii2\wablas\Wablas::class,
         'endpoint' => 'my-wablas.com/api',                  // Change with your wablas API endpoint
         'token'    => 'my-token',                           // Change with your wablas API token
+        'secret'   => 'my-secret',                          // Optional, change with your wablas API secret, you can use token with format `token.secret`
     ],
 ],
 ```
