@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @author Agiel K. Saputra <agielkurniawans@gmail.com>
  * @copyright Copyright (c) 2022 Agiel K. Saputra
@@ -34,6 +35,11 @@ class Wablas extends Component
     public $token;
 
     /**
+     * @var string
+     */
+    public $secret;
+
+    /**
      * @var array
      */
     public $versions = [];
@@ -60,11 +66,16 @@ class Wablas extends Component
     {
         parent::init();
 
+        $authorization = $this->token;
+        if ($this->secret) {
+            $authorization .= '.' . $this->secret;
+        }
+
         $this->_client = Yii::createObject([
             'class' => Client::class,
             'baseUrl' => $this->endpoint,
             'requestConfig' => [
-                'headers' => ['Authorization' => $this->token],
+                'headers' => ['Authorization' => $authorization],
                 'format' => Client::FORMAT_JSON
             ]
         ]);
