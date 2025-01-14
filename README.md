@@ -134,6 +134,7 @@ class CustomVersion extends BaseObject
         'class'    => \diecoding\yii2\wablas\Wablas::class,
         'endpoint' => 'my-wablas.com',                      // Change with your endpoint
         'token'    => 'my-token',                           // Change with your wablas token,
+        'secret'   => 'my-secret',                          // Optional, change with your wablas API secret, you can use token with format `token.secret`
         'versions' => [
             'custom' => CustomVersion::class,
         ]
@@ -166,6 +167,7 @@ composer require diecoding/yii2-wablas ^1.0
         'class'    => \diecoding\yii2\wablas\Wablas::class,
         'endpoint' => 'my-wablas.com/api',
         'token'    => 'my-token',
+        'secret'   => 'my-secret',                          // Optional, you can use token with format `token.secret`
     ],
     // ...
 ],
